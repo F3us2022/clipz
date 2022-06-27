@@ -17,13 +17,13 @@ export class ManageComponent implements OnInit {
     });
   }
 
-  //Using QUERY PARAMETER
+  //Using QUERY PARAMETER (navigateByURL)
   // sort(event: Event) {
   //   const { value } = event.target as HTMLSelectElement;
   //   this.router.navigateByUrl('/manage?sort=${value}');
   // }
 
-  //SAME AS AOBOVE BUT USING PATH PARAMETER
+  //SAME AS ABOVE BUT USING PATH PARAMETER (navigate)
   sort(event: Event) {
     const { value } = event.target as HTMLSelectElement;
     this.router.navigate([], {
