@@ -16,6 +16,9 @@ import { EmailTaken } from '../validators/email-taken';
 export class RegisterComponent {
   constructor(private auth: AuthService, private emailTaken: EmailTaken) {}
   inSubmission = false;
+
+  // Use of RSJX Validators
+
   name = new UntypedFormControl('', [
     Validators.required,
     Validators.minLength(3),
